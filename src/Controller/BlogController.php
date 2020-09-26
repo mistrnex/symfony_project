@@ -21,6 +21,8 @@ class BlogController extends AbstractController
     }
 
     /**
+     * First method for blog controller testing
+     *
      * @Route("/", name="blog_index")
      */
     public function index(Request $request)

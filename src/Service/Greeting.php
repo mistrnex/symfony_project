@@ -18,6 +18,12 @@ class Greeting
         $this->logger = $logger;
     }
 
+    /**
+     * Just first testing method
+     *
+     * @param string $name
+     * @return string
+     */
     public function greet(string $name): string
     {
         $this->logger->info("Greated $name");
