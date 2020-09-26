@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15a44420-19da-4b97-bb29-47651c1c71b7" name="Default Changelist" comment="- 2 comments added about first testing methods">
-      <change afterPath="$PROJECT_DIR$/src/Command/HelloCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/ExampleVoter.php" afterDir="false" />
+    <list default="true" id="15a44420-19da-4b97-bb29-47651c1c71b7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony_01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony_01.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/Greeting.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/Greeting.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BlogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +126,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/debug-bundle" />
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/templating" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hTV9h5errfdhvvNU6xncGVz7MG" />
@@ -132,7 +137,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../symart" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -147,7 +152,7 @@
       <workItem from="1600034920174" duration="1985000" />
       <workItem from="1600112875532" duration="1840000" />
       <workItem from="1600119192431" duration="6307000" />
-      <workItem from="1601112948331" duration="7592000" />
+      <workItem from="1601112948331" duration="15843000" />
     </task>
     <task id="LOCAL-00001" summary="- initial commit">
       <created>1601113767751</created>
@@ -177,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601114348356</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- service container learning">
+      <created>1601130287542</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601130287542</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,17 +198,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- initial commit" />
     <MESSAGE value="- 2 comments added about first testing methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="- 2 comments added about first testing methods" />
+    <MESSAGE value="- service container learning" />
+    <option name="LAST_COMMIT_MESSAGE" value="- service container learning" />
   </component>
   <component name="WindowStateProjectService">
     <state x="3324" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1601126517893">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="3324" y="153" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601126517893" />
-    <state x="2264" y="176" width="1332" height="863" key="CommitChangelistDialog2" timestamp="1601114989142">
+    <state x="2264" y="176" width="1332" height="863" key="CommitChangelistDialog2" timestamp="1601130286515">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2264" y="176" width="1332" height="863" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601114989142" />
+    <state x="2264" y="176" width="1332" height="863" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601130286515" />
+    <state x="2660" y="335" key="FileChooserDialogImpl" timestamp="1601142969226">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state x="2660" y="335" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601142969226" />
     <state x="2580" y="109" key="NewPhpClassDialog" timestamp="1601127953167">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
@@ -206,13 +223,21 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2714" y="503" key="NewPhpFileDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1600034981608" />
-    <state x="2472" y="313" key="Vcs.Push.Dialog.v2" timestamp="1601114353126">
+    <state x="2012" y="92" width="1736" height="976" key="VCS.FileHistoryDialog" timestamp="1601142402541">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2472" y="313" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601114353126" />
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1600119342820">
+    <state x="2012" y="92" width="1736" height="976" key="VCS.FileHistoryDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601142402541" />
+    <state x="2472" y="313" key="Vcs.Push.Dialog.v2" timestamp="1601130291008">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1600119342820" />
+    <state x="2472" y="313" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601130291008" />
+    <state x="2104" y="195" width="1631" height="845" key="find.popup" timestamp="1601143739613">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state x="2104" y="195" width="1631" height="845" key="find.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601143739613" />
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1601145816584">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601145816584" />
   </component>
 </project>
