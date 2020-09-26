@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15a44420-19da-4b97-bb29-47651c1c71b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BlogController.php" afterDir="false" />
+    <list default="true" id="15a44420-19da-4b97-bb29-47651c1c71b7" name="Default Changelist" comment="- 2 comments added about first testing methods">
+      <change afterPath="$PROJECT_DIR$/src/Command/HelloCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/ExampleVoter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Service/Greeting.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/Greeting.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,6 +133,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -143,7 +147,7 @@
       <workItem from="1600034920174" duration="1985000" />
       <workItem from="1600112875532" duration="1840000" />
       <workItem from="1600119192431" duration="6307000" />
-      <workItem from="1601112948331" duration="1363000" />
+      <workItem from="1601112948331" duration="7592000" />
     </task>
     <task id="LOCAL-00001" summary="- initial commit">
       <created>1601113767751</created>
@@ -166,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601114147106</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- 2 comments added about first testing methods">
+      <created>1601114348356</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601114348356</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,25 +185,31 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="- initial commit" />
+    <MESSAGE value="- 2 comments added about first testing methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="- 2 comments added about first testing methods" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2264" y="176" width="1332" height="863" key="CommitChangelistDialog2" timestamp="1601114145711">
+    <state x="3324" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1601126517893">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2264" y="176" width="1332" height="863" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601114145711" />
-    <state x="440" y="64" key="NewPhpClassDialog" timestamp="1600121226960">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="3324" y="153" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601126517893" />
+    <state x="2264" y="176" width="1332" height="863" key="CommitChangelistDialog2" timestamp="1601114989142">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state x="2264" y="176" width="1332" height="863" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601114989142" />
+    <state x="2580" y="109" key="NewPhpClassDialog" timestamp="1601127953167">
+      <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="440" y="64" key="NewPhpClassDialog/0.0.1280.680/1920.0.1920.1160@0.0.1280.680" timestamp="1600121226960" />
+    <state x="2580" y="109" key="NewPhpClassDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601127953167" />
     <state x="2714" y="503" key="NewPhpFileDialog" timestamp="1600034981608">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2714" y="503" key="NewPhpFileDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1600034981608" />
-    <state x="2472" y="313" key="Vcs.Push.Dialog.v2" timestamp="1601114153135">
+    <state x="2472" y="313" key="Vcs.Push.Dialog.v2" timestamp="1601114353126">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2472" y="313" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601114153135" />
+    <state x="2472" y="313" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601114353126" />
     <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1600119342820">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>

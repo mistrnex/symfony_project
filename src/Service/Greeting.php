@@ -13,9 +13,15 @@ class Greeting
      */
     private $logger;
 
-    public function __construct(LoggerInterface $logger)
+    /**
+     * @var string
+     */
+    private $message;
+
+    public function __construct(LoggerInterface $logger, string $message)
     {
         $this->logger = $logger;
+        $this->message = $message;
     }
 
     /**
@@ -26,7 +32,9 @@ class Greeting
      */
     public function greet(string $name): string
     {
-        $this->logger->info("Greated $name");
-        return "Helloggg $name";
+        $this->logger->info("Greeted $name");
+        return "{$this->message} $name";
+//        return "Hello lovely $name";
+
     }
 }
