@@ -4,16 +4,16 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
-    hello_message: 'Hello from service'
+#    hello_message: 'Hello from service'
 
 services:
     # default configuration for services in *this* file
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
-        public: false
-        bind:
-            $message: '%hello_message%'
+#        public: false
+#        bind:
+#            $message: '%hello_message%'
 #            App\Service\SomeInterface: '@some_service'
 
     # makes classes in src/ available to be used as services
@@ -40,9 +40,9 @@ services:
 #
 #    App\Service\Greeting: ['@monolog.logger']
 
-    app.greeting:
-        public: true
-        alias: App\Service\Greeting
+#    app.greeting:
+#        public: true
+#        alias: App\Service\Greeting
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones

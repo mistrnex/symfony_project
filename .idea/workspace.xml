@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15a44420-19da-4b97-bb29-47651c1c71b7" name="Default Changelist" comment="- beginning the blog">
-      <change afterPath="$PROJECT_DIR$/templates/blog/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/blog/post.html.twig" afterDir="false" />
+    <list default="true" id="15a44420-19da-4b97-bb29-47651c1c71b7" name="Default Changelist" comment="- changes in view templates but really working">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/HelloCommand.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/Greeting.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +148,7 @@
       <workItem from="1600034920174" duration="1985000" />
       <workItem from="1600112875532" duration="1840000" />
       <workItem from="1600119192431" duration="6307000" />
-      <workItem from="1601112948331" duration="20121000" />
+      <workItem from="1601112948331" duration="20940000" />
     </task>
     <task id="LOCAL-00001" summary="- initial commit">
       <created>1601113767751</created>
@@ -192,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601146314109</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="- changes in view templates but really working">
+      <created>1601246358569</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601246358569</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,17 +210,18 @@
     <MESSAGE value="- 2 comments added about first testing methods" />
     <MESSAGE value="- service container learning" />
     <MESSAGE value="- beginning the blog" />
-    <option name="LAST_COMMIT_MESSAGE" value="- beginning the blog" />
+    <MESSAGE value="- changes in view templates but really working" />
+    <option name="LAST_COMMIT_MESSAGE" value="- changes in view templates but really working" />
   </component>
   <component name="WindowStateProjectService">
     <state x="3324" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1601126517893">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="3324" y="153" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601126517893" />
-    <state x="2106" y="57" width="1332" height="982" key="CommitChangelistDialog2" timestamp="1601228241306">
+    <state x="2249" y="95" width="1332" height="982" key="CommitChangelistDialog2" timestamp="1601246938922">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2106" y="57" width="1332" height="982" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601228241306" />
+    <state x="2249" y="95" width="1332" height="982" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601246938922" />
     <state x="2660" y="335" key="FileChooserDialogImpl" timestamp="1601152239385">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
@@ -231,14 +239,14 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2012" y="92" width="1736" height="976" key="VCS.FileHistoryDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601142402541" />
-    <state x="2472" y="313" key="Vcs.Push.Dialog.v2" timestamp="1601146317159">
+    <state x="2472" y="313" key="Vcs.Push.Dialog.v2" timestamp="1601246363995">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2472" y="313" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601146317159" />
-    <state x="2104" y="195" width="1631" height="845" key="find.popup" timestamp="1601143739613">
+    <state x="2472" y="313" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601246363994" />
+    <state x="2104" y="195" width="1631" height="845" key="find.popup" timestamp="1601246846364">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2104" y="195" width="1631" height="845" key="find.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601143739613" />
+    <state x="2104" y="195" width="1631" height="845" key="find.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601246846364" />
     <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1601145816584">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>

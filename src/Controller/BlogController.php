@@ -3,7 +3,7 @@
 
 namespace App\Controller;
 
-use App\Service\Greeting;
+//use App\Service\Greeting;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -22,10 +22,10 @@ use Symfony\Component\Routing\RouterInterface;
  */
 class BlogController extends AbstractController
 {
-    /**
-     * @var \Twig\Environment
-     */
-    private $twig;
+//    /**
+//     * @var \Twig\Environment
+//     */
+//    private $twig;
 
     /**
      * @var SessionInterface
@@ -39,16 +39,16 @@ class BlogController extends AbstractController
 
     /**
      * BlogController constructor.
-     * @param \Twig\Environment $twig
+//     * @param \Twig\Environment $twig
      * @param SessionInterface $session
      * @param RouterInterface $router
      */
     public function __construct(
-        \Twig\Environment $twig,
+//        \Twig\Environment $twig,
         SessionInterface $session,
         RouterInterface $router)
     {
-        $this->twig = $twig;
+//        $this->twig = $twig;
         $this->session = $session;
     }
 
@@ -59,7 +59,7 @@ class BlogController extends AbstractController
      */
     public function index()
     {
-        $html = $this->twig->render('blog/index.html.twig',
+        $html = $this->render('blog/index.html.twig',
         [
             'posts' => $this->session->get('posts')
         ]
