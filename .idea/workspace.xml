@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15a44420-19da-4b97-bb29-47651c1c71b7" name="Default Changelist" comment="- changes in view templates but really working">
+    <list default="true" id="15a44420-19da-4b97-bb29-47651c1c71b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Service/Greeting.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command/HelloCommand.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/Greeting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +20,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpDebugGeneral" break_at_first_line="true" />
+  <component name="PhpWebServerValidation" path_to_validation_script="C:\xampp\htdocs\symfony_01\public" selected_validation_type="LOCAL" web_path_to_validation_script="http://127.0.0.1/" />
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
@@ -122,7 +124,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/debug-bundle" />
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
-      <path value="$PROJECT_DIR$/vendor/symfony/templating" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hTV9h5errfdhvvNU6xncGVz7MG" />
@@ -133,8 +134,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../symfony_start" />
-    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -148,7 +149,7 @@
       <workItem from="1600034920174" duration="1985000" />
       <workItem from="1600112875532" duration="1840000" />
       <workItem from="1600119192431" duration="6307000" />
-      <workItem from="1601112948331" duration="20940000" />
+      <workItem from="1601112948331" duration="1092000" />
     </task>
     <task id="LOCAL-00001" summary="- initial commit">
       <created>1601113767751</created>
@@ -164,92 +165,81 @@
       <option name="project" value="LOCAL" />
       <updated>1601113972765</updated>
     </task>
-    <task id="LOCAL-00003" summary="- initial commit">
-      <created>1601114147106</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1601114147106</updated>
-    </task>
-    <task id="LOCAL-00004" summary="- 2 comments added about first testing methods">
-      <created>1601114348356</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1601114348356</updated>
-    </task>
-    <task id="LOCAL-00005" summary="- service container learning">
-      <created>1601130287542</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1601130287542</updated>
-    </task>
-    <task id="LOCAL-00006" summary="- beginning the blog">
-      <created>1601146314109</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1601146314109</updated>
-    </task>
-    <task id="LOCAL-00007" summary="- changes in view templates but really working">
-      <created>1601246358569</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1601246358569</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- initial commit" />
-    <MESSAGE value="- 2 comments added about first testing methods" />
-    <MESSAGE value="- service container learning" />
-    <MESSAGE value="- beginning the blog" />
-    <MESSAGE value="- changes in view templates but really working" />
-    <option name="LAST_COMMIT_MESSAGE" value="- changes in view templates but really working" />
+    <option name="LAST_COMMIT_MESSAGE" value="- initial commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="3324" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1601126517893">
+    <state x="2610" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601248083456">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="3324" y="153" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601126517893" />
-    <state x="2249" y="95" width="1332" height="982" key="CommitChangelistDialog2" timestamp="1601246938922">
+    <state x="2610" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601248083456" />
+    <state x="2595" y="402" width="570" height="469" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1601249467583">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2249" y="95" width="1332" height="982" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601246938922" />
-    <state x="2660" y="335" key="FileChooserDialogImpl" timestamp="1601152239385">
+    <state x="2595" y="402" width="570" height="469" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601249467583" />
+    <state x="2264" y="176" width="1332" height="863" key="CommitChangelistDialog2" timestamp="1601113971747">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2660" y="335" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601152239385" />
-    <state x="2580" y="109" key="NewPhpClassDialog" timestamp="1601127953167">
+    <state x="2264" y="176" width="1332" height="863" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601113971747" />
+    <state x="2012" y="92" width="1736" height="976" key="DiffContextDialog" timestamp="1601248251287">
       <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state x="2012" y="92" width="1736" height="976" key="DiffContextDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601248251287" />
+    <state x="2660" y="321" key="FileChooserDialogImpl" timestamp="1601249432584">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state x="2660" y="321" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601249432584" />
+    <state x="440" y="64" key="NewPhpClassDialog" timestamp="1600121226960">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="440" y="64" key="NewPhpClassDialog/0.0.1280.680/1920.0.1920.1160@0.0.1280.680" timestamp="1600121226960" />
-    <state x="2580" y="109" key="NewPhpClassDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601127953167" />
     <state x="2714" y="503" key="NewPhpFileDialog" timestamp="1600034981608">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2714" y="503" key="NewPhpFileDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1600034981608" />
-    <state x="2012" y="92" width="1736" height="976" key="VCS.FileHistoryDialog" timestamp="1601142402541">
+    <state x="2381" y="225" key="SettingsEditor" timestamp="1601249751109">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2012" y="92" width="1736" height="976" key="VCS.FileHistoryDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601142402541" />
-    <state x="2472" y="313" key="Vcs.Push.Dialog.v2" timestamp="1601246363995">
+    <state x="2381" y="225" key="SettingsEditor/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601249751109" />
+    <state x="2712" y="277" key="VCS.ChangeListViewerDialog" timestamp="1601247386275">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2472" y="313" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601246363994" />
-    <state x="2104" y="195" width="1631" height="845" key="find.popup" timestamp="1601246846364">
+    <state x="2712" y="277" key="VCS.ChangeListViewerDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601247386275" />
+    <state x="2472" y="313" key="Vcs.Push.Dialog.v2" timestamp="1601113983527">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2104" y="195" width="1631" height="845" key="find.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601246846364" />
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1601145816584">
+    <state x="2472" y="313" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601113983527" />
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1601250009193">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601145816584" />
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601250009193" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/BlogController.php</url>
+          <line>47</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

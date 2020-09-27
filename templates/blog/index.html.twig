@@ -3,6 +3,7 @@
 {% block title %}Blog index{% endblock %}
 
 {% block body %}
+    <h1>Blog index</h1>
     {% for id, post in posts %}
 
         <p><a href="{{ path('blog_show', {'id' : id}) }}">ID {{ id }}</a></p>

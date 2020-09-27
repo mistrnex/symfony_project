@@ -3,73 +3,56 @@
 
 namespace App\Controller;
 
-//use App\Service\Greeting;
 
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\Session\SessionInterface;
+
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Routing\RouterInterface;
 
-/**
- * Class BlogController
- * @Route ("/blog")
- */
+
 class BlogController extends AbstractController
 {
-//    /**
-//     * @var \Twig\Environment
-//     */
-//    private $twig;
 
     /**
-     * @var SessionInterface
+     * @var
      */
     private $session;
 
     /**
-     * @var RouterInterface
+     * @var
      */
     private $router;
 
-    /**
-     * BlogController constructor.
-//     * @param \Twig\Environment $twig
-     * @param SessionInterface $session
-     * @param RouterInterface $router
-     */
-    public function __construct(
-//        \Twig\Environment $twig,
-        SessionInterface $session,
-        RouterInterface $router)
+    public function __construct(SessionInterface $session, RouterInterface $router)
     {
-//        $this->twig = $twig;
         $this->session = $session;
     }
 
     /**
      * First method for blog controller testing
-     * @Method({"GET"})
      * @Route("/", name="blog_index")
      */
     public function index()
     {
-        $html = $this->render('blog/index.html.twig',
-        [
-            'posts' => $this->session->get('posts')
-        ]
-        );
+//        $html = $this->render('blog/index.html.twig',
+//            [
+//                'posts' => $this->session->get('posts')
+//            ]
+//        );
 
         $posts = $this->session->get('posts');
 
 //        return new Response($html);
 
-        return $this->render('articles/index.html.twig', array('posts' => $posts));
+//        debug($posts);
+//        die;
+
+        return $this->render('blog/index.html.twig', array('posts' => $posts));
     }
 
     /**
@@ -99,7 +82,7 @@ class BlogController extends AbstractController
             throw new NotFoundHttpException('Post really not found');
         }
 
-        $html = $this->twig->render(
+        $html = $this->render(
             'blog/post.html.twig',
             [
                 'id' =>$id,
