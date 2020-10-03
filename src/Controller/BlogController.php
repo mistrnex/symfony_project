@@ -15,6 +15,11 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Routing\RouterInterface;
 
 
+/**
+ * Class BlogController
+ * @package App\Controller
+
+ */
 class BlogController extends AbstractController
 {
 
@@ -39,36 +44,52 @@ class BlogController extends AbstractController
      */
     public function index()
     {
-//        $html = $this->render('blog/index.html.twig',
-//            [
-//                'posts' => $this->session->get('posts')
-//            ]
-//        );
+        $html = $this->render('blog/index.html.twig',
+            [
+                'posts' => $this->session->get('posts')
+            ]
+        );
 
-        $posts = $this->session->get('posts');
+//        $posts = $this->session->get('posts');
 
-//        return new Response($html);
+//         $posts = [
+//             '1' =>
+//             ['title' => 'aHOJ titulek', 'text' => 'dvfasdgasd'],
+//             '2' =>
+//                 ['title' => 'aHOJ titulek8888', 'text' => 'dvfasdgasd9999']
+//
+//         ];
+
+//        $posts = $this->session->get('posts');
+//        var_dump($posts);
+        return new Response($html);
 
 //        debug($posts);
 //        die;
 
-        return $this->render('blog/index.html.twig', array('posts' => $posts));
+//        return $this->render('blog/index.html.twig', array('posts' => $posts));
     }
 
     /**
      * @Route("/add", name="blog_add")
-     * @throws \Exception
      */
     public function add()
     {
         $posts = $this->session->get('posts');
         $posts[uniqid('', true)] = [
-            'title' => 'A random title ' . random_int(1, 500),
+            'title' => 'A random titleeee ' . random_int(1, 500),
             'text' => 'Some random text nr. ' . random_int(1, 500),
         ];
         $this->session->set('posts', $posts);
 
-        return new RedirectResponse($this->router->generate('blog_index'));
+//        return new RedirectResponse($this->router->generate('blog_index'));
+
+        return $this->redirectToRoute('blog_index');
+
+//        return $this->redirect('blog_index');
+//        return $this->redirect('/');
+
+
     }
 
     /**
@@ -78,7 +99,7 @@ class BlogController extends AbstractController
     {
         $posts = $this->session->get('posts');
 
-        if (!$posts || !isset($postst[$id])) {
+        if (!$posts || !isset($posts[$id])) {
             throw new NotFoundHttpException('Post really not found');
         }
 
