@@ -39,7 +39,7 @@ class BlogController extends AbstractController
     }
 
     /**
-     * First method for blog controller testing
+     * First method for blog controller testing - basic blog index
      * @Route("/", name="blog_index")
      */
     public function index()
@@ -71,6 +71,7 @@ class BlogController extends AbstractController
     }
 
     /**
+     * Add (randomly generated) blog post
      * @Route("/add", name="blog_add")
      */
     public function add()
@@ -79,6 +80,7 @@ class BlogController extends AbstractController
         $posts[uniqid('', true)] = [
             'title' => 'A random titleeee ' . random_int(1, 500),
             'text' => 'Some random text nr. ' . random_int(1, 500),
+            'date' => new \DateTime(),
         ];
         $this->session->set('posts', $posts);
 
@@ -93,6 +95,7 @@ class BlogController extends AbstractController
     }
 
     /**
+     * Basic method for showing blog detail
      * @Route("/show/{id}", name="blog_show")
      */
     public function show($id)
