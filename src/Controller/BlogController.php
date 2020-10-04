@@ -49,25 +49,7 @@ class BlogController extends AbstractController
                 'posts' => $this->session->get('posts')
             ]
         );
-
-//        $posts = $this->session->get('posts');
-
-//         $posts = [
-//             '1' =>
-//             ['title' => 'aHOJ titulek', 'text' => 'dvfasdgasd'],
-//             '2' =>
-//                 ['title' => 'aHOJ titulek8888', 'text' => 'dvfasdgasd9999']
-//
-//         ];
-
-//        $posts = $this->session->get('posts');
-//        var_dump($posts);
         return new Response($html);
-
-//        debug($posts);
-//        die;
-
-//        return $this->render('blog/index.html.twig', array('posts' => $posts));
     }
 
     /**
@@ -84,14 +66,7 @@ class BlogController extends AbstractController
         ];
         $this->session->set('posts', $posts);
 
-//        return new RedirectResponse($this->router->generate('blog_index'));
-
         return $this->redirectToRoute('blog_index');
-
-//        return $this->redirect('blog_index');
-//        return $this->redirect('/');
-
-
     }
 
     /**

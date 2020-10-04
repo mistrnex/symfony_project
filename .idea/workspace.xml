@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15a44420-19da-4b97-bb29-47651c1c71b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony_01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony_01.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BlogController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +156,7 @@
       <workItem from="1601303152912" duration="1210000" />
       <workItem from="1601326248183" duration="4791000" />
       <workItem from="1601653674435" duration="657000" />
-      <workItem from="1601754666917" duration="16791000" />
+      <workItem from="1601754666917" duration="17868000" />
     </task>
     <task id="LOCAL-00001" summary="- initial commit">
       <created>1601113767751</created>
@@ -200,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601766573746</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="- added assets through Webpack and Encore">
+      <created>1601821577394</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601821577394</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +221,8 @@
     <MESSAGE value="- slightly working index() method" />
     <MESSAGE value="- really working BlogController" />
     <MESSAGE value="- added Twig filter, globals and custom error404 page" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added Twig filter, globals and custom error404 page" />
+    <MESSAGE value="- added assets through Webpack and Encore" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added assets through Webpack and Encore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2775" y="399" key="#com.intellij.ide.util.MemberChooser" timestamp="1601765421735">
@@ -236,10 +237,10 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2595" y="402" width="570" height="469" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601250763801" />
-    <state x="1994" y="39" width="1732" height="1047" key="CommitChangelistDialog2" timestamp="1601766572758">
+    <state x="1994" y="39" width="1732" height="1047" key="CommitChangelistDialog2" timestamp="1601821576394">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="1994" y="39" width="1732" height="1047" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601766572758" />
+    <state x="1994" y="39" width="1732" height="1047" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601821576394" />
     <state x="2012" y="92" width="1736" height="976" key="DiffContextDialog" timestamp="1601248251287">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
@@ -277,20 +278,9 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2235" y="219" width="1460" height="747" key="find.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601818462676" />
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1601818449677">
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1601821591039">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601818449677" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/Controller/BlogController.php</url>
-          <line>52</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601821591039" />
   </component>
 </project>
