@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\MicroPostRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=MicroPostRepository::class)
@@ -61,6 +62,8 @@ class MicroPost
 
     /**
      * @ORM\Column(type="string", length=200)
+     * @Assert\NotBlank()
+     * @Assert\Length(min=10, minMessage="More characters!")
      */
     private $text;
 
