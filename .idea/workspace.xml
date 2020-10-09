@@ -5,12 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15a44420-19da-4b97-bb29-47651c1c71b7" name="Default Changelist" comment="- unused code deleted from BlogController">
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201008120348.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/MicroPostController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/MicroPost.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/MicroPostType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/MicroPostRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/micro-post/add.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/micro-post/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/micro-post/post.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/micro-post/raw-post.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony_01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony_01.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/ahoj.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/ahoj.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,18 +147,24 @@
       <path value="$PROJECT_DIR$/vendor/symfony/templating" />
       <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hTV9h5errfdhvvNU6xncGVz7MG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../symfony_start" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -160,7 +182,8 @@
       <workItem from="1601303152912" duration="1210000" />
       <workItem from="1601326248183" duration="4791000" />
       <workItem from="1601653674435" duration="657000" />
-      <workItem from="1601754666917" duration="26812000" />
+      <workItem from="1601754666917" duration="29718000" />
+      <workItem from="1602147470453" duration="19687000" />
     </task>
     <task id="LOCAL-00001" summary="- initial commit">
       <created>1601113767751</created>
@@ -211,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601822062214</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="- added basic comments about Doctrine">
+      <created>1601931166595</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601931166595</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,52 +258,55 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="- initial commit" />
     <MESSAGE value="- slightly working index() method" />
     <MESSAGE value="- really working BlogController" />
     <MESSAGE value="- added Twig filter, globals and custom error404 page" />
     <MESSAGE value="- added assets through Webpack and Encore" />
     <MESSAGE value="- unused code deleted from BlogController" />
-    <option name="LAST_COMMIT_MESSAGE" value="- unused code deleted from BlogController" />
+    <MESSAGE value="- added basic comment about Doctrine" />
+    <MESSAGE value="- added basic comments about Doctrine" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added basic comments about Doctrine" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2775" y="399" key="#com.intellij.ide.util.MemberChooser" timestamp="1601765421735">
+    <state x="2775" y="399" key="#com.intellij.ide.util.MemberChooser" timestamp="1602236762400">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2775" y="399" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601765421735" />
-    <state x="2610" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1601248083456">
+    <state x="2775" y="399" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602236762400" />
+    <state x="2610" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602235781784">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2610" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601248083456" />
+    <state x="2610" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602235781784" />
     <state x="2595" y="402" width="570" height="469" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1601250763801">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2595" y="402" width="570" height="469" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601250763801" />
-    <state x="1994" y="39" width="1732" height="1047" key="CommitChangelistDialog2" timestamp="1601930090919">
+    <state x="1994" y="39" width="1732" height="1047" key="CommitChangelistDialog2" timestamp="1601931165645">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="1994" y="39" width="1732" height="1047" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601930090919" />
+    <state x="1994" y="39" width="1732" height="1047" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601931165645" />
     <state x="2012" y="92" width="1736" height="976" key="DiffContextDialog" timestamp="1601248251287">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2012" y="92" width="1736" height="976" key="DiffContextDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601248251287" />
-    <state x="2660" y="321" key="FileChooserDialogImpl" timestamp="1601291044091">
+    <state x="2660" y="321" key="FileChooserDialogImpl" timestamp="1602147672857">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2660" y="321" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601291044091" />
-    <state x="2580" y="109" key="NewPhpClassDialog" timestamp="1601762756604">
+    <state x="2660" y="321" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602147672857" />
+    <state x="2580" y="109" key="NewPhpClassDialog" timestamp="1602246924645">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="440" y="64" key="NewPhpClassDialog/0.0.1280.680/1920.0.1920.1160@0.0.1280.680" timestamp="1600121226960" />
-    <state x="2580" y="109" key="NewPhpClassDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601762756604" />
+    <state x="2580" y="109" key="NewPhpClassDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602246924645" />
     <state x="2714" y="503" key="NewPhpFileDialog" timestamp="1600034981608">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2714" y="503" key="NewPhpFileDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1600034981608" />
-    <state x="2381" y="225" key="SettingsEditor" timestamp="1601250764953">
+    <state x="2381" y="225" key="SettingsEditor" timestamp="1602234596616">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2381" y="225" key="SettingsEditor/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601250764953" />
+    <state x="2381" y="225" key="SettingsEditor/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602234596616" />
     <state x="2712" y="277" key="VCS.ChangeListViewerDialog" timestamp="1601247386275">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
@@ -282,17 +315,17 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2012" y="92" width="1736" height="976" key="VCS.FileHistoryDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601327925007" />
-    <state x="2472" y="313" key="Vcs.Push.Dialog.v2" timestamp="1601822066085">
+    <state x="2472" y="313" key="Vcs.Push.Dialog.v2" timestamp="1601931171725">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2472" y="313" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601822066085" />
-    <state x="2235" y="219" width="1460" height="747" key="find.popup" timestamp="1601818462676">
+    <state x="2472" y="313" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601931171725" />
+    <state x="2235" y="219" width="1460" height="747" key="find.popup" timestamp="1602252678033">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2235" y="219" width="1460" height="747" key="find.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601818462676" />
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1601929321651">
+    <state x="2235" y="219" width="1460" height="747" key="find.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602252678033" />
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1602248297915">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601929321651" />
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602248297915" />
   </component>
 </project>

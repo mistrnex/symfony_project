@@ -1,10 +1,10 @@
-        env(DATABASE_URL): ''
+#        env(DATABASE_URL): ''
 
 doctrine:
     dbal:
         driver: 'pdo_mysql'
         server_version: '5.7'
-        charset: utfmb4
+        charset: utf8mb4
 
         url: '%env(resolve:DATABASE_URL)%'
 
