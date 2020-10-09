@@ -8,7 +8,7 @@ use Serializable;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
- * @ORM\Entity(repositoryClass=UserRepository::class)
+ * @ORM\Entity(repositoryClass="App\Repository\UserRepository", repositoryClass=UserRepository::class)
  */
 class User implements UserInterface, Serializable
 
@@ -40,29 +40,67 @@ class User implements UserInterface, Serializable
      */
     private $fullName;
 
-    public function getId(): ?int
+    /**
+     * @return mixed
+     */
+    public function getId()
     {
         return $this->id;
     }
 
-    public function getRoles(){
+    /**
+     * @return string[]
+     */
+    public function getRoles()
+    {
         return [
             'ROLE_USER'
         ];
     }
-    public function getPassword(){
+
+    /**
+     * @return string|null
+     */
+    public function getPassword()
+    {
         return $this->password;
     }
-    public function getSalt(){
+
+    /**
+     * @return string|null
+     */
+    public function getSalt()
+    {
         return null;
     }
-    public function getUsername(){
+
+    /**
+     * @return string
+     */
+    public function getUsername()
+    {
         return $this->username;
     }
-    public function eraseCredentials(){
+
+    /**
+     * @param $username
+     */
+    public function setUsername($username)
+    {
+        $this->username = $username;
+    }
+
+    /**
+     *
+     */
+    public function eraseCredentials()
+    {
 
     }
 
+    /**
+     * @return string
+     */
     public function serialize()
     {
         return serialize([
@@ -72,13 +110,56 @@ class User implements UserInterface, Serializable
         ]);
     }
 
+    /**
+     * @param string $serialized
+     */
     public function unserialize($serialized)
     {
-       list(
-           $this->id,
-           $this->username,
-           $this->password,
-           ) = unserialize ($serialized);
+        list(
+            $this->id,
+            $this->username,
+            $this->password) = unserialize($serialized, false);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    /**
+     * @param mixed $email
+     */
+    public function setEmail($email): void
+    {
+        $this->email = $email;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFullName()
+    {
+        return $this->fullName;
+    }
+
+    /**
+     * @param mixed $fullName
+     */
+    public function setFullName($fullName): void
+    {
+        $this->fullName = $fullName;
+    }
+
+
+    /**
+     * @param $password
+     */
+    public function setPassword($password): void
+    {
+        $this->password = $password;
     }
 
 
