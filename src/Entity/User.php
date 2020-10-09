@@ -118,7 +118,7 @@ class User implements UserInterface, Serializable
         list(
             $this->id,
             $this->username,
-            $this->password) = unserialize($serialized, false);
+            $this->password) = unserialize($serialized, []);
     }
 
     /**

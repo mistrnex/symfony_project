@@ -2,11 +2,15 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 use Twig\Environment;
+
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Error\SyntaxError;
 
 class SecurityController
 {
@@ -17,12 +21,16 @@ class SecurityController
 
     public function __construct(Environment $twig)
     {
-
         $this->twig = $twig;
     }
 
     /**
      * @Route("/login", name="security_login")
+     * @param AuthenticationUtils $authenticationUtils
+     * @return Response
+     * @throws LoaderError
+     * @throws RuntimeError
+     * @throws SyntaxError
      */
     public function login(AuthenticationUtils $authenticationUtils)
     {
