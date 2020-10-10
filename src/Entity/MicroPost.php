@@ -20,6 +20,24 @@ class MicroPost
     private $id;
 
     /**
+     * @ORM\Column(type="string", length=200)
+     * @Assert\NotBlank()
+     * @Assert\Length(min=10, minMessage="More characters!")
+     */
+    private $text;
+
+    /**
+     * @ORM\Column(type="datetime")
+     */
+    private $time;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="posts")
+     * @ORM\JoinColumn()
+     */
+    private $user;
+
+    /**
      * @return mixed
      */
     public function getId()
@@ -61,16 +79,21 @@ class MicroPost
     }
 
     /**
-     * @ORM\Column(type="string", length=200)
-     * @Assert\NotBlank()
-     * @Assert\Length(min=10, minMessage="More characters!")
+     * @return mixed
      */
-    private $text;
+    public function getUser()
+    {
+        return $this->user;
+    }
 
     /**
-     * @ORM\Column(type="datetime")
+     * @param mixed $user
      */
-    private $time;
+    public function setUser($user): void
+    {
+        $this->user = $user;
+    }
+
 
 
 }
