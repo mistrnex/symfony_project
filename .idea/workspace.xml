@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15a44420-19da-4b97-bb29-47651c1c71b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/BlogController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20201019193358.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/MicroPostVoter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ahoj.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/ahoj.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MicroPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MicroPostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/MicroPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/MicroPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/micro-post/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/micro-post/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/micro-post/raw-post.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/micro-post/raw-post.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,6 +155,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../symfony_start" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -176,7 +187,10 @@
       <workItem from="1601326248183" duration="4791000" />
       <workItem from="1601653674435" duration="657000" />
       <workItem from="1601754666917" duration="29718000" />
-      <workItem from="1602147470453" duration="46531000" />
+      <workItem from="1602147470453" duration="62285000" />
+      <workItem from="1602796753801" duration="2892000" />
+      <workItem from="1603094726128" duration="640000" />
+      <workItem from="1603095951245" duration="12937000" />
     </task>
     <task id="LOCAL-00001" summary="- initial commit">
       <created>1601113767751</created>
@@ -283,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602342810715</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="- added fixtures + user_id to microPost table + navigation bar to Twig template">
+      <created>1602415747463</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1602415747463</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,17 +337,26 @@
     <MESSAGE value="- login process" />
     <MESSAGE value="- login/logout process finished" />
     <MESSAGE value="- register process + added relations between User and MicroPost Entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="- register process + added relations between User and MicroPost Entities" />
+    <MESSAGE value="- added fixtures + user_id to microPost table + navigation bar to Twig template" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added fixtures + user_id to microPost table + navigation bar to Twig template" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2472" y="221" key="#Plugins" timestamp="1603095971315">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state x="2472" y="221" key="#Plugins/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603095971315" />
     <state x="2774" y="205" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602263638246">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2774" y="205" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602263638246" />
-    <state x="2775" y="399" key="#com.intellij.ide.util.MemberChooser" timestamp="1602341998191">
+    <state x="2775" y="399" key="#com.intellij.ide.util.MemberChooser" timestamp="1603135981957">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2775" y="399" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602341998191" />
+    <state x="2775" y="399" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603135981957" />
+    <state x="2560" y="316" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603094753237">
+      <screen x="1920" y="0" width="1920" height="1160" />
+    </state>
+    <state x="2560" y="316" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603094753237" />
     <state x="2610" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602235781784">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
@@ -335,23 +365,23 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2595" y="402" width="570" height="469" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601250763801" />
-    <state x="1994" y="39" width="1732" height="1047" key="CommitChangelistDialog2" timestamp="1602342809750">
+    <state x="1994" y="39" width="1732" height="1047" key="CommitChangelistDialog2" timestamp="1602415746430">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="1994" y="39" width="1732" height="1047" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602342809750" />
+    <state x="1994" y="39" width="1732" height="1047" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602415746430" />
     <state x="2012" y="92" width="1736" height="976" key="DiffContextDialog" timestamp="1602282335346">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2012" y="92" width="1736" height="976" key="DiffContextDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602282335346" />
-    <state x="2660" y="321" key="FileChooserDialogImpl" timestamp="1602147672857">
+    <state x="2660" y="321" key="FileChooserDialogImpl" timestamp="1603118148823">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2660" y="321" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602147672857" />
-    <state x="2580" y="109" key="NewPhpClassDialog" timestamp="1602336244097">
+    <state x="2660" y="321" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603118148823" />
+    <state x="2580" y="109" key="NewPhpClassDialog" timestamp="1602437258936">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="440" y="64" key="NewPhpClassDialog/0.0.1280.680/1920.0.1920.1160@0.0.1280.680" timestamp="1600121226960" />
-    <state x="2580" y="109" key="NewPhpClassDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602336244097" />
+    <state x="2580" y="109" key="NewPhpClassDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602437258936" />
     <state x="2714" y="503" key="NewPhpFileDialog" timestamp="1600034981608">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
@@ -372,13 +402,13 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2472" y="313" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602342814851" />
-    <state x="2235" y="219" width="1460" height="747" key="find.popup" timestamp="1602338111509">
+    <state x="2235" y="219" width="1460" height="747" key="find.popup" timestamp="1603139696690">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2235" y="219" width="1460" height="747" key="find.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602338111509" />
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1602341038165">
+    <state x="2235" y="219" width="1460" height="747" key="find.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603139696690" />
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1603137802207">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
-    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602341038165" />
+    <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603137802207" />
   </component>
 </project>
