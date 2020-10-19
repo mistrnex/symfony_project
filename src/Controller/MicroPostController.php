@@ -73,7 +73,9 @@ class MicroPostController extends AbstractController
      */
     public function __construct(MicroPostRepository $microPostRepository, FormFactoryInterface $formFactory,
                                 EntityManagerInterface $entityManager, RouterInterface $router, FlashBagInterface $flashBag,
-                                AuthorizationCheckerInterface $authorizationChecker)
+                                AuthorizationCheckerInterface $authorizationChecker
+//                                $securitySecurity
+    )
     {
         $this->microPostRepository = $microPostRepository;
         $this->formFactory = $formFactory;
