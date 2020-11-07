@@ -4,6 +4,7 @@
 namespace App\Controller;
 
 use App\Entity\MicroPost;
+use App\Entity\User;
 use App\Form\MicroPostType;
 use App\Repository\MicroPostRepository;
 use DateTime;
@@ -22,6 +23,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Routing\RouterInterface;
 use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
 use Symfony\Component\Security\Csrf\TokenStorage\TokenStorageInterface;
+
 //use Symfony\Component\Security\Core\Security;
 
 /**
@@ -92,9 +94,14 @@ class MicroPostController extends AbstractController
      */
     public function index(): Response
     {
+
+
         $html = $this->render('micro-post/index.html.twig',
             [
-                'posts' => $this->microPostRepository->findBy([], ['time' => 'DESC']),
+                'posts' => $this->microPostRepository->findBy(
+                    [],
+                    ['time' => 'DESC']
+                ),
             ]
         );
         return new Response($html);
@@ -163,13 +170,13 @@ class MicroPostController extends AbstractController
      */
     public function add(Request $request, TokenStorageInterface $tokenStorage)
     {
-//        $user = $tokenStorage->getToken()->getUser();
+        $user = $tokenStorage->getToken()->getUser();
 
 //        $user = $this->security->getUser();
 
         $microPost = new MicroPost();
-        $microPost->setTime(new DateTime());
-//        $microPost->setUser($user);
+//        $microPost->setTime(new DateTime());
+        $microPost->setUser($user);
 
         $form = $this->formFactory->create(MicroPostType::class, $microPost);
         $form->handleRequest($request);
@@ -186,6 +193,26 @@ class MicroPostController extends AbstractController
                 ['form' => $form->createView()]
             )
         );
+    }
+
+    /**
+     * @Route("/user/{username}", name="micro_post_user")
+     */
+    public function userPosts(User $userWithPosts)
+    {
+        $html = $this->render('micro-post/user-posts.html.twig',
+            [
+                'posts' => $this->microPostRepository->findBy(
+                    ['user' => $userWithPosts],
+                    ['time' => 'DESC']
+                ),
+                'user' => $userWithPosts,
+//            'posts' => $userWithPosts->getPosts()
+            ]
+        );
+
+        return new Response($html);
+
     }
 
     /**

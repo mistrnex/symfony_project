@@ -2,39 +2,43 @@
 
 $inputs = ['Petr', 'Jan', 'John', 'Vocas', 'H20', 'Pepek'];
 
- function roundRobinGenerator(array $inputs): array {
-     $countParticipants = count($inputs);
-     $numberOfRounds = $countParticipants-1;
-     $numberOfPairs = floor($countParticipants/2);
-     $roundRobinTable = [];
-     $firstInput = $inputs[0];
+$inputs2 = ['Jan', 'John', 'Vocas', 'H20', 'Pepek', 'Lizani'];
 
-     for ($i=1; $i <= $numberOfRounds; $i++) {
-         $roundRobinTable[$i] = [
-             $inputs[0], $inputs[1]
-         ];
 
-         echo $inputs[0] . '<br>' . $inputs[1];
-         // posunout o jedna krome [0]
-         $lastItem = end($inputs);
-         echo '<br>' . $lastItem . '<br>';
-         $otherInputs = array_unshift($inputs, $lastItem);
-         $inputs = array_merge([$firstInput, $otherInputs]);
-     }
+function generateRoundRobin($arrayInputs)
+{
+    $count = count($arrayInputs);
+    $firstItem = $arrayInputs[0];
+    $result = [];
 
-    return $roundRobinTable;
+    for ($i = 0; $i < $count - 1; $i++) {
+        array_shift($arrayInputs);
+        echo '<br>';
+        $lastItem = end($arrayInputs);
+        $otherInputs = array_unshift($arrayInputs, $lastItem);
+        array_pop($arrayInputs);
+        $arrayInputs = array_merge([$firstItem], $arrayInputs);
+
+        // black and white problem
+        //while loop s cislama j,k kde j roste a k klesa?
+        if ($i % 2 === 0) {
+            $result[$i][] = $arrayInputs[0] . ' - ' . $arrayInputs[$count-1] . '<br>';
+        } else {
+            $result[$i][] = $arrayInputs[$count-1] . ' - ' . $arrayInputs[0] . '<br>';
+
+        }
+        $result[$i][] = $arrayInputs[1] . ' - ' . $arrayInputs[4] . '<br>';
+        $result[$i][] = $arrayInputs[2] . ' - ' . $arrayInputs[3] . '<br>';
     }
 
-roundRobinGenerator($inputs);
+    return $result;
+}
 
-//    var_dump(roundRobinGenerator($inputs));
-
-//    foreach (roundRobinGenerator($inputs) as $i => $input) {
-//        echo $input[0] . ' '. $i . '<br>';
-//        echo $input[1] . ' '. $i . '<br>';
-//        echo '<br>';
-//    }
-
-//    print(roundRobinGenerator($inputs));
+foreach (generateRoundRobin($inputs2) as $i => $inputs) {
+    foreach ($inputs as $input) {
+        echo ($i+1) . ': ' . $input;
+    }
+    echo '<br>';
+}
 
 ?>
