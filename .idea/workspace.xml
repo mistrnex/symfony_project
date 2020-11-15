@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15a44420-19da-4b97-bb29-47651c1c71b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201107235104.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/LikesController.php" afterDir="false" />
+    <list default="true" id="15a44420-19da-4b97-bb29-47651c1c71b7" name="Default Changelist" comment="- starting Likes functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/MicroPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/MicroPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/micro-post/post.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/micro-post/post.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +144,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IT/Papaj web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
@@ -183,7 +181,8 @@
       <workItem from="1602796753801" duration="2892000" />
       <workItem from="1603094726128" duration="640000" />
       <workItem from="1603095951245" duration="13498000" />
-      <workItem from="1604759367179" duration="23478000" />
+      <workItem from="1604759367179" duration="23610000" />
+      <workItem from="1605477180449" duration="3696000" />
     </task>
     <task id="LOCAL-00001" summary="- initial commit">
       <created>1601113767751</created>
@@ -325,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604785127706</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="- starting Likes functionality">
+      <created>1604870739344</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1604870739344</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +368,8 @@
     <MESSAGE value="- added MicroPostVoter + authentication logic" />
     <MESSAGE value="- added basic follow &amp; unfollow logic on backend and frontend" />
     <MESSAGE value="- cover follow and unfollow logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="- cover follow and unfollow logic" />
+    <MESSAGE value="- starting Likes functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="- starting Likes functionality" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="221" key="#Plugins" timestamp="1603095971315">
@@ -391,20 +398,20 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2595" y="402" width="570" height="469" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601250763801" />
-    <state x="2019" y="47" width="2108" height="1037" key="CommitChangelistDialog2" timestamp="1604785126703">
+    <state x="2019" y="47" width="2108" height="1037" key="CommitChangelistDialog2" timestamp="1605478100342">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="1994" y="39" width="1732" height="1047" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603140755888" />
-    <state x="2019" y="47" width="2108" height="1037" key="CommitChangelistDialog2/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1604785126703" />
+    <state x="2019" y="47" width="2108" height="1037" key="CommitChangelistDialog2/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605478100342" />
     <state x="2012" y="92" width="1736" height="976" key="DiffContextDialog" timestamp="1602282335346">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2012" y="92" width="1736" height="976" key="DiffContextDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602282335346" />
-    <state x="2907" y="387" key="FileChooserDialogImpl" timestamp="1604790959036">
+    <state x="2907" y="387" key="FileChooserDialogImpl" timestamp="1604870825342">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2660" y="321" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603141124705" />
-    <state x="2907" y="387" key="FileChooserDialogImpl/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1604790959036" />
+    <state x="2907" y="387" key="FileChooserDialogImpl/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1604870825342" />
     <state x="2800" y="132" key="NewPhpClassDialog" timestamp="1604794538645">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
@@ -427,16 +434,16 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2012" y="92" width="1736" height="976" key="VCS.FileHistoryDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601327925007" />
-    <state x="2656" y="378" key="Vcs.Push.Dialog.v2" timestamp="1604785135232">
+    <state x="2656" y="378" key="Vcs.Push.Dialog.v2" timestamp="1604870747589">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2472" y="313" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603140764712" />
-    <state x="2656" y="378" key="Vcs.Push.Dialog.v2/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1604785135232" />
-    <state x="2340" y="264" width="1947" height="902" key="find.popup" timestamp="1604792932420">
+    <state x="2656" y="378" key="Vcs.Push.Dialog.v2/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1604870747589" />
+    <state x="2340" y="264" width="1947" height="902" key="find.popup" timestamp="1605480096765">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2235" y="219" width="1460" height="747" key="find.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603139696690" />
-    <state x="2340" y="264" width="1947" height="902" key="find.popup/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1604792932420" />
+    <state x="2340" y="264" width="1947" height="902" key="find.popup/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605480096765" />
     <state x="2751" y="308" width="896" height="819" key="search.everywhere.popup" timestamp="1604782180550">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>

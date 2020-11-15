@@ -121,9 +121,9 @@ class MicroPost
     }
 
     /**
-     * @return ArrayCollection
+     * @return
      */
-    public function getLikedBy(): ArrayCollection
+    public function getLikedBy()
     {
         return $this->likedBy;
     }
