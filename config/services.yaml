@@ -45,6 +45,11 @@ services:
         arguments:
             $locale: '%locale%'
 
+    App\EventListener\LikeNotificationSubscriber:
+        tags:
+            - { name: doctrine.event_subscriber, connection: default }
+
+
 #    app.greeting:
 #        public: true
 #        alias: App\Service\Greeting

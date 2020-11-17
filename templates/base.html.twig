@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <title>{% block title %}Blog project!{% endblock %}</title>
     {% block stylesheets %}
-{#        <link rel="stylesheet" href="{{ asset('public/build/css/app.css') }}">#}
-        <link rel="stylesheet" src="public/build/vendors~css/app.css">
+        {# <link rel="stylesheet" href="{{ asset('public/build/css/app.css') }}"> #}
+        <link rel="stylesheet" href="public/build/vendors~css/app.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
 
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
     {% endblock %}
 </head>
 <body class="bg-light">
@@ -27,14 +42,22 @@
     <div class="order-2 order-md-1">
         <ul class="navbar-nav px-3">
             {% if is_granted('ROLE_USER') %}
+                <li class="nav-item text-nowrap border-right border-secondary">
+                    <a class="nav-link" href="{{ path('notification_all') }}">
+                        Notifications
+                        <span class="badge badge-light" id="notification-count">
+                            <i class="fa fa-circle fa-circle-o-notch fa-spin"></i>
+                        </span>
+                    </a>
+                </li>
                 <li class="nav-item text-nowrap">
                     <a class="nav-link"
                        href="#">{{ app.user.fullName }}</a>
                 </li>
                 <li class="nav-item text-nowrap">
-                <!--
-                logout_path() links to properties defined in security.yaml firewalls-main (if not specified)-logout_path
-                -->
+                    <!--
+                    logout_path() links to properties defined in security.yaml firewalls-main (if not specified)-logout_path
+                    -->
                     <a class="nav-link"
                        href="{{ logout_path() }}">Sign out</a>
                 </li>
@@ -50,18 +73,38 @@
 
 <main role="main" class="container">
     <div class="my-3 p-3 bg-white rounded box-shadow">
-
         {% block body %}
         {% endblock %}
 
-
     </div>
-
 </main>
 {% block javascripts %}
-{#    <script src="{{ asset('public/build/vendors~js/app.js') }}"></script>#}
+    {# <script src="{{ asset('public/build/vendors~js/app.js') }}"></script> #}
     <script href="public/build/vendors~js/app.js"></script>
 
+    {% if is_granted('ROLE_USER') %}
+
+    <script>
+        function fetchNotificationCount() {
+            fetch(
+                '{{ path('notification_unread') }}',
+                {'credentials': 'include'}
+            ).then(function (response) {
+                response.json().then(function (json) {
+                    document.getElementById('notification-count').innerText = json.count;
+                    // console.log(json.count);
+                    setTimeout(fetchNotificationCount, 5000);
+
+                });
+            }).catch(function (reason) {
+
+            });
+        }
+
+        fetchNotificationCount();
+    </script>
+
+    {% endif %}
 {% endblock %}
 </body>
 </html>
