@@ -106,6 +106,7 @@ class User implements UserInterface, Serializable
         $this->followers = new ArrayCollection();
         $this->following = new ArrayCollection();
         $this->postsLiked = new ArrayCollection();
+        $this->roles = [self::ROLE_USER];
 
     }
 
@@ -141,7 +142,6 @@ class User implements UserInterface, Serializable
     {
         return $this->following;
     }
-
 
 
     /**
@@ -290,8 +290,8 @@ class User implements UserInterface, Serializable
     }
 
 
-
-    public function follow(User $userToFollow){
+    public function follow(User $userToFollow)
+    {
         if ($this->getFollowing()->contains($userToFollow)) {
             return false;
         }

@@ -5,21 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15a44420-19da-4b97-bb29-47651c1c71b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201117140348.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/NotificationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/LikeNotification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Notification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventListener/LikeNotificationSubscriber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/LikeNotificationRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/NotificationRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/notification/notifications.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/dev/swiftmailer.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/swiftmailer.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/test/swiftmailer.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Event/UserRegisterEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Event/UserSubscriber.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/email/registration.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/symfony_01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony_01.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Twig/AppExtension.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Twig/AppExtension.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +143,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hTV9h5errfdhvvNU6xncGVz7MG" />
@@ -197,7 +200,8 @@
       <workItem from="1603095951245" duration="13498000" />
       <workItem from="1604759367179" duration="23610000" />
       <workItem from="1605477180449" duration="3745000" />
-      <workItem from="1605618537104" duration="14825000" />
+      <workItem from="1605618537104" duration="15199000" />
+      <workItem from="1605971694728" duration="6306000" />
     </task>
     <task id="LOCAL-00001" summary="- initial commit">
       <created>1601113767751</created>
@@ -353,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605483010229</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="- added notification logic and functionality">
+      <created>1605653983433</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1605653983433</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,7 +403,8 @@
     <MESSAGE value="- cover follow and unfollow logic" />
     <MESSAGE value="- starting Likes functionality" />
     <MESSAGE value="- XHR likes functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="- XHR likes functionality" />
+    <MESSAGE value="- added notification logic and functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added notification logic and functionality" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="221" key="#Plugins" timestamp="1603095971315">
@@ -403,44 +415,44 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2774" y="205" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602263638246" />
-    <state x="3060" y="482" key="#com.intellij.ide.util.MemberChooser" timestamp="1605621410495">
+    <state x="3060" y="482" key="#com.intellij.ide.util.MemberChooser" timestamp="1605971967967">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2775" y="399" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603135981957" />
-    <state x="3060" y="482" key="#com.intellij.ide.util.MemberChooser/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605621410495" />
+    <state x="3060" y="482" key="#com.intellij.ide.util.MemberChooser/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605971967967" />
     <state x="2560" y="316" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603094753237">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2560" y="316" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603094753237" />
-    <state x="2840" y="404" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605633172093">
+    <state x="2840" y="404" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605979811604">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2610" y="335" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602235781784" />
-    <state x="2840" y="404" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605633172093" />
+    <state x="2840" y="404" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605979811604" />
     <state x="2595" y="402" width="570" height="469" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#" timestamp="1601250763801">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2595" y="402" width="570" height="469" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601250763801" />
-    <state x="2019" y="47" width="2108" height="1037" key="CommitChangelistDialog2" timestamp="1605483009135">
+    <state x="2019" y="47" width="2108" height="1037" key="CommitChangelistDialog2" timestamp="1605653982240">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="1994" y="39" width="1732" height="1047" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603140755888" />
-    <state x="2019" y="47" width="2108" height="1037" key="CommitChangelistDialog2/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605483009135" />
+    <state x="2019" y="47" width="2108" height="1037" key="CommitChangelistDialog2/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605653982240" />
     <state x="2012" y="92" width="1736" height="976" key="DiffContextDialog" timestamp="1602282335346">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2012" y="92" width="1736" height="976" key="DiffContextDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602282335346" />
-    <state x="2907" y="387" key="FileChooserDialogImpl" timestamp="1604870825342">
+    <state x="2907" y="387" key="FileChooserDialogImpl" timestamp="1605654305839">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2660" y="321" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603141124705" />
-    <state x="2907" y="387" key="FileChooserDialogImpl/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1604870825342" />
-    <state x="3369" y="465" key="NewPhpClassDialog" timestamp="1605645981454">
+    <state x="2907" y="387" key="FileChooserDialogImpl/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605654305839" />
+    <state x="3420" y="559" key="NewPhpClassDialog" timestamp="1605972708557">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="440" y="64" key="NewPhpClassDialog/0.0.1280.680/1920.0.1920.1160@0.0.1280.680" timestamp="1600121226960" />
     <state x="2580" y="109" key="NewPhpClassDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602437258936" />
-    <state x="3369" y="465" key="NewPhpClassDialog/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605645981454" />
+    <state x="3420" y="559" key="NewPhpClassDialog/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605972708557" />
     <state x="2714" y="503" key="NewPhpFileDialog" timestamp="1600034981608">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
@@ -457,20 +469,20 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2012" y="92" width="1736" height="976" key="VCS.FileHistoryDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601327925007" />
-    <state x="2656" y="378" key="Vcs.Push.Dialog.v2" timestamp="1605483016465">
+    <state x="2656" y="378" key="Vcs.Push.Dialog.v2" timestamp="1605653991388">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2472" y="313" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603140764712" />
-    <state x="2656" y="378" key="Vcs.Push.Dialog.v2/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605483016465" />
-    <state x="2340" y="264" width="1947" height="902" key="find.popup" timestamp="1605651682892">
+    <state x="2656" y="378" key="Vcs.Push.Dialog.v2/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605653991388" />
+    <state x="2340" y="264" width="1947" height="902" key="find.popup" timestamp="1605979775928">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2235" y="219" width="1460" height="747" key="find.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603139696690" />
-    <state x="2340" y="264" width="1947" height="902" key="find.popup/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605651682892" />
-    <state x="2751" y="308" width="896" height="819" key="search.everywhere.popup" timestamp="1605646559492">
+    <state x="2340" y="264" width="1947" height="902" key="find.popup/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605979775928" />
+    <state x="2751" y="308" width="896" height="819" key="search.everywhere.popup" timestamp="1605981061826">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603137802207" />
-    <state x="2751" y="308" width="896" height="819" key="search.everywhere.popup/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605646559492" />
+    <state x="2751" y="308" width="896" height="819" key="search.everywhere.popup/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605981061826" />
   </component>
 </project>
