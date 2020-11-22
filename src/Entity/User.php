@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\PersistentCollection;
 use Serializable;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
-use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Security\Core\User\AdvancedUserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -16,7 +16,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * @UniqueEntity(fields="email", message="This email is already used")
  * @UniqueEntity(fields="username", message="This username is already used")
  */
-class User implements UserInterface, Serializable
+class User implements AdvancedUserInterface, Serializable
 
 {
     const ROLE_USER = 'ROLE_USER';
@@ -100,6 +100,16 @@ class User implements UserInterface, Serializable
      */
     private $following;
 
+    /**
+     * @ORM\Column(type="string", nullable=true, length=30)
+     */
+    private $confirmationToken;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $enabled;
+
     public function __construct()
     {
         $this->posts = new ArrayCollection();
@@ -107,6 +117,8 @@ class User implements UserInterface, Serializable
         $this->following = new ArrayCollection();
         $this->postsLiked = new ArrayCollection();
         $this->roles = [self::ROLE_USER];
+        $this->enabled = false;
+//        $this->confirmationToken = '';
 
     }
 
@@ -202,6 +214,7 @@ class User implements UserInterface, Serializable
             $this->id,
             $this->username,
             $this->password,
+            $this->enabled
         ]);
     }
 
@@ -213,7 +226,8 @@ class User implements UserInterface, Serializable
         list(
             $this->id,
             $this->username,
-            $this->password) = unserialize($serialized, []);
+            $this->password,
+            $this->enabled) = unserialize($serialized, []);
     }
 
     /**
@@ -297,6 +311,62 @@ class User implements UserInterface, Serializable
         }
 
         $this->getFollowing()->add($userToFollow);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getConfirmationToken()
+    {
+        return $this->confirmationToken;
+    }
+
+    /**
+     * @param mixed $confirmationToken
+     */
+    public function setConfirmationToken($confirmationToken): void
+    {
+        $this->confirmationToken = $confirmationToken;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function getEnabled()
+    {
+        return $this->enabled;
+    }
+
+    /**
+     * @param boolean $enabled
+     */
+    public function setEnabled($enabled): void
+    {
+        $this->enabled = $enabled;
+    }
+
+
+    public function isAccountNonExpired()
+    {
+       return true;
+    }
+
+
+    public function isAccountNonLocked()
+    {
+        return true;
+    }
+
+
+    public function isCredentialsNonExpired()
+    {
+        return true;
+    }
+
+
+    public function isEnabled()
+    {
+return $this->enabled;
     }
 
 
