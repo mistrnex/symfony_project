@@ -5,21 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15a44420-19da-4b97-bb29-47651c1c71b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201121231543.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20201121231857.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Mailer/Mailer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/TokenGenerator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/confirmation.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/translations/messages.en.xlf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/translations/messages.fr.xlf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/translations/validators.en.xlf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/translations/validators.fr.xlf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/dev/swiftmailer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/dev/swiftmailer.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Event/UserSubscriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Event/UserSubscriber.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/email/registration.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/email/registration.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/micro-post/user-posts.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/micro-post/user-posts.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +155,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IT/Newsletter" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IT/Peklo web" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
@@ -201,7 +196,7 @@
       <workItem from="1605477180449" duration="3745000" />
       <workItem from="1605618537104" duration="15199000" />
       <workItem from="1605971694728" duration="6859000" />
-      <workItem from="1605993519507" duration="6939000" />
+      <workItem from="1605993519507" duration="15404000" />
     </task>
     <task id="LOCAL-00001" summary="- initial commit">
       <created>1601113767751</created>
@@ -371,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605981818421</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="- added token after registration">
+      <created>1606065092619</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1606065092627</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,7 +414,8 @@
     <MESSAGE value="- XHR likes functionality" />
     <MESSAGE value="- added notification logic and functionality" />
     <MESSAGE value="- adding Swift mailer logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="- adding Swift mailer logic" />
+    <MESSAGE value="- added token after registration" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added token after registration" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="221" key="#Plugins" timestamp="1603095971315">
@@ -441,20 +444,20 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2595" y="402" width="570" height="469" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601250763801" />
-    <state x="2019" y="47" width="2108" height="1037" key="CommitChangelistDialog2" timestamp="1605981817111">
+    <state x="2019" y="47" width="2108" height="1037" key="CommitChangelistDialog2" timestamp="1606065091130">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="1994" y="39" width="1732" height="1047" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603140755888" />
-    <state x="2019" y="47" width="2108" height="1037" key="CommitChangelistDialog2/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605981817111" />
+    <state x="2019" y="47" width="2108" height="1037" key="CommitChangelistDialog2/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1606065091130" />
     <state x="2012" y="92" width="1736" height="976" key="DiffContextDialog" timestamp="1602282335346">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2012" y="92" width="1736" height="976" key="DiffContextDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602282335346" />
-    <state x="2907" y="387" key="FileChooserDialogImpl" timestamp="1606053593602">
+    <state x="2907" y="387" key="FileChooserDialogImpl" timestamp="1606086054617">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2660" y="321" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603141124705" />
-    <state x="2907" y="387" key="FileChooserDialogImpl/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1606053593602" />
+    <state x="2907" y="387" key="FileChooserDialogImpl/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1606086054617" />
     <state x="3420" y="559" key="NewPhpClassDialog" timestamp="1606042157698">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
@@ -473,24 +476,25 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2712" y="277" key="VCS.ChangeListViewerDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601247386275" />
-    <state x="2012" y="92" width="1736" height="976" key="VCS.FileHistoryDialog" timestamp="1601327925007">
-      <screen x="1920" y="0" width="1920" height="1160" />
+    <state x="2043" y="111" width="2315" height="1178" key="VCS.FileHistoryDialog" timestamp="1606071908362">
+      <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2012" y="92" width="1736" height="976" key="VCS.FileHistoryDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601327925007" />
+    <state x="2043" y="111" width="2315" height="1178" key="VCS.FileHistoryDialog/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1606071908362" />
     <state x="2656" y="378" key="Vcs.Push.Dialog.v2" timestamp="1605981823638">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2472" y="313" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603140764712" />
     <state x="2656" y="378" key="Vcs.Push.Dialog.v2/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605981823638" />
-    <state x="2340" y="264" width="1947" height="902" key="find.popup" timestamp="1605979775928">
+    <state x="2340" y="264" width="1947" height="902" key="find.popup" timestamp="1606068657821">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2235" y="219" width="1460" height="747" key="find.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603139696690" />
-    <state x="2340" y="264" width="1947" height="902" key="find.popup/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1605979775928" />
-    <state x="2751" y="308" width="896" height="819" key="search.everywhere.popup" timestamp="1606043373255">
+    <state x="2340" y="264" width="1947" height="902" key="find.popup/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1606068657821" />
+    <state x="2751" y="308" width="896" height="819" key="search.everywhere.popup" timestamp="1606065680931">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2543" y="255" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603137802207" />
-    <state x="2751" y="308" width="896" height="819" key="search.everywhere.popup/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1606043373255" />
+    <state x="2751" y="308" width="896" height="819" key="search.everywhere.popup/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1606065680931" />
   </component>
 </project>
