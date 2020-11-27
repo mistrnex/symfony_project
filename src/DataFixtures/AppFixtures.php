@@ -4,6 +4,7 @@ namespace App\DataFixtures;
 
 use App\Entity\MicroPost;
 use App\Entity\User;
+use App\Entity\UserPreferences;
 use DateTime;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
@@ -53,6 +54,11 @@ class AppFixtures extends Fixture
         'What are you up to today?',
         'Did you watch the game yesterday?',
         'How was your day?'
+    ];
+
+    private const LANGUAGES = [
+        'en',
+        'fr'
     ];
 
     /**
@@ -108,6 +114,14 @@ class AppFixtures extends Fixture
             $user->setEnabled(true);
 
             $this->addReference($userData['username'], $user);
+
+            $preferences = new UserPreferences();
+            $preferences->setLocale(self::LANGUAGES[random_int(0, 1)]);
+
+            $user->setPreferences($preferences);
+
+//deals with cascase Entity relation
+            $manager->persist($preferences);
 
             $manager->persist($user);
         }
