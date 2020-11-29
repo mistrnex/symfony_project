@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15a44420-19da-4b97-bb29-47651c1c71b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/Mailer/MailerTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Security/TokenGeneratorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony_01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony_01.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mailer/Mailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mailer/Mailer.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +147,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IT/Peklo web" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IT/PHP/Symfony Hands On Udemy/micro-post.conf" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
@@ -195,7 +189,7 @@
       <workItem from="1605618537104" duration="15199000" />
       <workItem from="1605971694728" duration="6859000" />
       <workItem from="1605993519507" duration="15448000" />
-      <workItem from="1606252122701" duration="17569000" />
+      <workItem from="1606252122701" duration="21612000" />
     </task>
     <task id="LOCAL-00001" summary="- initial commit">
       <created>1601113767751</created>
@@ -386,7 +380,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606435354082</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="- added PHP unit basic tests">
+      <created>1606489427434</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1606489427434</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,7 +405,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- slightly working index() method" />
     <MESSAGE value="- really working BlogController" />
     <MESSAGE value="- added Twig filter, globals and custom error404 page" />
     <MESSAGE value="- added assets through Webpack and Encore" />
@@ -429,7 +429,8 @@
     <MESSAGE value="- added token after registration" />
     <MESSAGE value="- translations to French added" />
     <MESSAGE value="- added locale logic through  Subscribers" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added locale logic through  Subscribers" />
+    <MESSAGE value="- added PHP unit basic tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added PHP unit basic tests" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2472" y="221" key="#Plugins" timestamp="1603095971315">
@@ -458,20 +459,20 @@
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2595" y="402" width="570" height="469" key="#com.jetbrains.php.debug.validation.PhpWebServerValidationDialog#/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601250763801" />
-    <state x="2019" y="47" width="2108" height="1037" key="CommitChangelistDialog2" timestamp="1606435351942">
+    <state x="2019" y="47" width="2108" height="1037" key="CommitChangelistDialog2" timestamp="1606489425959">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="1994" y="39" width="1732" height="1047" key="CommitChangelistDialog2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603140755888" />
-    <state x="2019" y="47" width="2108" height="1037" key="CommitChangelistDialog2/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1606435351942" />
+    <state x="2019" y="47" width="2108" height="1037" key="CommitChangelistDialog2/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1606489425959" />
     <state x="2012" y="92" width="1736" height="976" key="DiffContextDialog" timestamp="1602282335346">
       <screen x="1920" y="0" width="1920" height="1160" />
     </state>
     <state x="2012" y="92" width="1736" height="976" key="DiffContextDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1602282335346" />
-    <state x="2907" y="387" key="FileChooserDialogImpl" timestamp="1606435379102">
+    <state x="2907" y="387" key="FileChooserDialogImpl" timestamp="1606513429505">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2660" y="321" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603141124705" />
-    <state x="2907" y="387" key="FileChooserDialogImpl/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1606435379102" />
+    <state x="2907" y="387" key="FileChooserDialogImpl/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1606513429505" />
     <state x="3420" y="559" key="NewPhpClassDialog" timestamp="1606475401361">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
@@ -495,11 +496,11 @@
     </state>
     <state x="2012" y="92" width="1736" height="976" key="VCS.FileHistoryDialog/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1601327925007" />
     <state x="2043" y="111" width="2315" height="1178" key="VCS.FileHistoryDialog/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1606071908362" />
-    <state x="2656" y="378" key="Vcs.Push.Dialog.v2" timestamp="1606435360902">
+    <state x="2656" y="378" key="Vcs.Push.Dialog.v2" timestamp="1606489447962">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
     <state x="2472" y="313" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1160@1920.0.1920.1160" timestamp="1603140764712" />
-    <state x="2656" y="378" key="Vcs.Push.Dialog.v2/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1606435360902" />
+    <state x="2656" y="378" key="Vcs.Push.Dialog.v2/1920.0.2560.1400/0.0.1920.1040@1920.0.2560.1400" timestamp="1606489447962" />
     <state x="2340" y="264" width="1947" height="902" key="find.popup" timestamp="1606476182844">
       <screen x="1920" y="0" width="2560" height="1400" />
     </state>
